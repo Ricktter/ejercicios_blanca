@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../_recursos/main.css">
+    <title>Dev.F JS Ejercicios - Funciones - 02. Máximo</title>
+  </head>
+  <body>
+    <h1>Máximo</h1>
+    <div class="formulario">
+      Número 1: <input type="text" name="numero1" id="numero1"><br />
+      Número 2: <input type="text" name="numero2" id="numero2"><br />
+      <button onclick="calcular_max();">Calcular!</button>
+      <div id="resultado"></div>
+    </div>
+    <script>
+        function calcular_max() {
+          var n1 = document.getElementById("#numero1").value;
+          var n2 = document.getElementById("#numero2").value;
+
+          var maximo = max(n1, n2);
+
+          var resultado = document.getElementById("#resultado");
+          resultado.innerHTML = "Max: " + maximo;
+          // innerHTML sirve para escribir texto en el html
+        }
+
+        function max(numero1, numero2) {
+          /*
+            Ejercicio: Terminar esta función para retornar el valor máximo
+            de los números numero1 y numero2. Usa "if" y "else" para calcularlo.
+           */
+
+          // Tu código acá! (antes del corchete de cierre)
+
+        }
+
+    </script>
+  </body>
+</html>
